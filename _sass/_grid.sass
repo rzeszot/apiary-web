@@ -1,0 +1,46 @@
+.grid
+  overflow: hidden
+
+  .grid-content
+    margin-top: 150px
+    margin-bottom: 150px
+    display: grid
+    transform: skewY(2deg)
+
+    width: 110vw
+    margin-left: -5vw
+
+    grid-template-columns: repeat(7, 1fr)
+    grid-auto-rows: repeat(3, 1fr)
+    flex-wrap: wrap
+
+    position: relative
+    display: grid
+    flex-wrap: wrap
+    height: 600px
+
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+    > div
+      grid-column-end: span 1
+      grid-row-end: span 1
+      flex-grow: 1
+      flex-shrink: 1
+      position: relative
+      overflow: hidden
+      transition: all .3s
+
+      &.wide
+        grid-column-end: span 2 !important
+
+      &.large
+        grid-column-end: span 2 !important
+        grid-row-end: span 2 !important
+
+      > a
+        > img
+          display: block
+          object-fit: cover
+          width: 100%
+          height: 100%
