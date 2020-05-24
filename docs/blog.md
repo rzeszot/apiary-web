@@ -2,6 +2,6 @@
 title: My First Page
 ---
 
-# Index
+# Blog
 
 This is the content of my page
