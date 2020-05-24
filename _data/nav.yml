@@ -1,0 +1,14 @@
+en:
+  blog:
+    name: Blog
+    url: /en
+  about:
+    name: Contact
+    url: /contact
+pl:
+  blog:
+    name: Blog
+    url: /
+  about:
+    name: Kontakt
+    url: /kontakt

@@ -2,7 +2,7 @@
   <div class='content'>
     <div class='pages'>
       <ul>
-        {% for item in site.nav[page.lang] %}
+        {% for item in site.data.nav[page.lang] %}
           <li>
             <a href='{{ item[1].url }}'>{{ item[1].name }}</a>
           </li>
@@ -17,7 +17,7 @@
         {% for lang in site.data.languages %}
           {% assign langauge=lang[1] %}
           <li>
-            <a href="{{ site.nav[langauge.code].blog.url }}" class="{{ langauge.code }}">{{ langauge.icon }}</a>
+            <a href="{{ site.data.nav[langauge.code].blog.url }}" class="{{ langauge.code }}">{{ langauge.icon }}</a>
           </li>
         {% endfor %}
       </ul>

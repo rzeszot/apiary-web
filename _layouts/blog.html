@@ -19,7 +19,7 @@
               <div>
                 {{ post.excerpt }}
               </div>
-              <a href="#">Read the guide →</a>
+              <a href="{{ post.url | absolute_url }}">Read the guide →</a>
             </li>
           {% endfor %}
         </ul>
