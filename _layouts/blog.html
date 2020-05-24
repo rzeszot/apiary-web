@@ -1,6 +1,4 @@
----
-
----
+{% assign posts=site.posts | where: "lang", page.lang %}
 <!doctype html>
 <html lang="{{ page.lang }}">
   <head>
@@ -9,22 +7,17 @@
   <body>
     {% include nav.html %}
 
-    <div class='container'>
-      <section>
-        {% assign posts=site.posts | where: "lang", page.lang %}
-        <ul>
-          {% for post in posts %}
-            <li>
-              <h1>{{ post.title }}</h1>
-              <div>
-                {{ post.excerpt }}
-              </div>
-              <a href="{{ post.url | absolute_url }}">Read the guide →</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-    </div>
+    <section class='container blog'>
+      {% for post in posts %}
+        <article>
+          <h1>{{ post.title }}</h1>
+          <div>
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ post.url | absolute_url }}">Read the guide →</a>
+        </article>
+      {% endfor %}
+    </section>
 
     {% include footer.html %}
   </body>
