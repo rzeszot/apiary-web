@@ -1,14 +1,20 @@
 en:
+  shop:
+    name: Shop
+    url: /shop
   blog:
     name: Blog
-    url: /en
+    url: /blog
   about:
     name: Contact
     url: /contact
 pl:
+  shop:
+    name: Sklep
+    url: /sklep
   blog:
     name: Blog
-    url: /
+    url: /wpisy
   about:
     name: Kontakt
     url: /kontakt

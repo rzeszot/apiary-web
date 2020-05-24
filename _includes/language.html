@@ -1,0 +1,6 @@
+{% for lang in site.data.languages %}
+  {% assign langauge=lang[1] %}
+  <li>
+    <a href="{{ site.data.nav[langauge.code].blog.url }}" class="{{ langauge.code }}">{{ langauge.icon }}</a>
+  </li>
+{% endfor %}

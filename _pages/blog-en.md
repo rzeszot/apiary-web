@@ -1,9 +1,9 @@
 ---
 title: Home
-permalink: /en
+permalink: /blog
 
 layout: blog
 
 lang: en
-ref: home
+ref: blog
 ---

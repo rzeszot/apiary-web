@@ -8,3 +8,6 @@ collections:
     output: true
   posts:
     permalink: /:name
+  shop:
+    permalink: /:name
+    output: true

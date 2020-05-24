@@ -1,9 +1,9 @@
 ---
 title: Dom
-permalink: /
+permalink: /wpisy
 
 layout: blog
 
 lang: pl
-ref: home
+ref: blog
 ---
