@@ -4,3 +4,4 @@ gem 'bundler'
 
 gem 'jekyll'
 gem 'jekyll-sitemap'
+gem 'jekyll-sass-converter'

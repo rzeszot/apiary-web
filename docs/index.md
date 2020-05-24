@@ -1,7 +1,0 @@
----
-title: My First Page
----
-
-# Index
-
-This is the content of my page

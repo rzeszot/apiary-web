@@ -1,6 +1,6 @@
 ---
 title: My First Page
-layout: default
+layout: main
 ---
 
 # Index

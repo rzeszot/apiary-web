@@ -3,3 +3,5 @@ timezone: Europe/Warsaw
 plugins:
   - jekyll-sitemap
 excerpt_separator: <!-- more -->
+sass:
+  style: compressed

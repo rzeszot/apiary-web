@@ -67,6 +67,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   jekyll
+  jekyll-sass-converter
   jekyll-sitemap
 
 BUNDLED WITH
