@@ -1,0 +1,11 @@
+---
+layout: main
+---
+
+{% for post in site.posts %}
+  <article>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url }}">Read the post →</a>
+  </article>
+{% endfor %}
