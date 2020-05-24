@@ -2,19 +2,25 @@
   <div class='content'>
     <div class='pages'>
       <ul>
-        <li>
-          <a href='/'>Blog</a>
-        </li>
-        <li>
-          <a href='/contact'>Contact</a>
-        </li>
+        {% for item in site.nav[page.lang] %}
+          <li>
+            <a href='{{ item[1].url }}'>{{ item[1].name }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
     <div class='logo'>
       <h1>Pasieka Rzeszot</h1>
     </div>
-    <div class='cart'>
-      ...
+    <div class='languages'>
+      <ul>
+        {% for lang in site.data.languages %}
+          {% assign langauge=lang[1] %}
+          <li>
+            <a href="{{ site.nav[langauge.code].blog.url }}" class="{{ langauge.code }}">{{ langauge.icon }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </nav>

@@ -2,6 +2,29 @@ url: "https://pasieka.rzeszot.pro"
 timezone: Europe/Warsaw
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+
 excerpt_separator: <!-- more -->
 sass:
   style: compressed
+
+collections:
+  pages:
+    output: true
+
+nav:
+  en:
+    blog:
+      name: Blog
+      url: /en
+    about:
+      name: Contact
+      url: /contact
+  pl:
+    blog:
+      name: Blog
+      url: /
+    about:
+      name: Kontakt
+      url: /kontakt
