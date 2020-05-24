@@ -1,3 +1,6 @@
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "bundler"
+gem 'bundler'
+
+gem 'jekyll'
+gem 'jekyll-sitemap'
