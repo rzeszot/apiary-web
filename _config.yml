@@ -1,7 +1,5 @@
-url: "https://pasieka.rzeszot.pro"
 timezone: Europe/Warsaw
 plugins:
-  - jekyll-sitemap
   - jekyll-redirect-from
 
 
