@@ -15,6 +15,13 @@
             {{ post.excerpt }}
           </div>
           <a href="{{ post.url | absolute_url }}">Read the guide →</a>
+            <span>
+              {% if page.lang == "pl" %}
+              {{ post.date | date_polish }}
+              {% else %}
+                {{ post.date | date: "%B %d, %Y" }}
+              {% endif %}
+            </span>
         </article>
       {% endfor %}
     </section>
