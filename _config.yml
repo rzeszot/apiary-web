@@ -1,6 +1,7 @@
 timezone: Europe/Warsaw
 plugins:
   - jekyll-redirect-from
+  - jekyll/polish_dates
 sass:
   style: compressed
 collections:
