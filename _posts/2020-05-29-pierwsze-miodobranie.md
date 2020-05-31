@@ -10,8 +10,3 @@ ref: the-first-honey-harvest
 ---
 
 Do napisania
-
-
----
-
-asdfasdf

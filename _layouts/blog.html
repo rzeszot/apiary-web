@@ -9,20 +9,18 @@
 
     <section class='container blog'>
       {% for post in posts %}
-        <article>
-          <h1>{{ post.title }}</h1>
-          <div>
-            {{ post.excerpt }}
-          </div>
-          <a href="{{ post.url | absolute_url }}">Read the guide →</a>
+        <a href="{{ post.url | absolute_url }}">
+          <article>
+            <h1>{{ post.title }}</h1>
             <span>
-              {% if page.lang == "pl" %}
-              {{ post.date | date_polish }}
+              {% if post.lang == "pl" %}
+                {{ post.date | date_polish }}
               {% else %}
                 {{ post.date | date: "%B %d, %Y" }}
               {% endif %}
             </span>
-        </article>
+          </article>
+        </a>
       {% endfor %}
     </section>
 
