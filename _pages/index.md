@@ -1,4 +1,4 @@
 ---
 permalink: /
-redirect_to: /sklep
+redirect_to: /wpisy
 ---
